@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+          <section>
+                    <div class="content" id="paragraph">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis neque magni adipisci
+                                        eius suscipit in laudantium sed, et asperiores fugit dolore hic omnis officiis
+                                        molestiae debitis consectetur architecto aliquid facere aut veniam autem.
+                                        Tempore nulla possimus amet molestias aut nostrum commodi esse, iure deserunt.
+                                        Ipsam quia, dicta consequuntur sit aliquid praesentium nostrum neque iste nisi
+                                        quos eius placeat aperiam nihil <span id="dots">...</span> <span id="more">
+                                                  voluptatibus corrupti labore in non aliquam
+                                                  perspiciatis sunt eaque excepturi velit? Repellat debitis aliquid
+                                                  deserunt. Ea
+                                                  molestiae harum labore hic!. Tempore nulla possimus amet molestias aut
+                                                  nostrum
+                                                  commodi esse, iure deserunt.
+                                                  Ipsam quia, dicta consequuntur sit aliquid praesentium nostrum neque
+                                                  iste nisi
+                                                  quos eius placeat aperiam nihil voluptatibus corrupti labore in non
+                                                  aliquam
+                                                  perspiciatis sunt eaque excepturi velit? Repellat debitis aliquid
+                                                  deserunt. Ea
+                                                  molestiae harum labore hic
+                                        </span></p>
+                    </div>
+                    <button id="button" onclick="read()" href="">Show more</button>
+          </section>
+
+          <script>
+                    const paragraph = document.getElementById('paragraph')
+                    const dots = document.getElementById('dots')
+                    const more = document.getElementById('more')
+                    const button = document.getElementById('button')
+
+                    // button.onclick = function () {
+
+                    //           if (paragraph.className == 'open') {
+                    //                     //shrink bok
+                    //                     paragraph.className = ''
+                    //                     button.innerHTML = 'Show more'
+                    //           }
+                    //           else {
+                    //                     //expand the box
+                    //                     paragraph.className = 'open'
+                    //                     button.innerHTML = 'Show less'
+                    //           }
+                    // }
+
+                    var i = false
+                    function read() {
+
+                              if (i == false) {
+                                        more.style.display = 'inline'
+                                        button.innerText = 'show less'
+                                        dots.style.display = 'none'
+                                        i = true
+                              }
+                              else {
+                                        more.style.display = 'none'
+                                        button.innerText = 'show more'
+                                        dots.style.display = 'inline'
+                                        i = false
+                              }
+                    }
+
+
+          </script>
+</body>
+
+</html>
